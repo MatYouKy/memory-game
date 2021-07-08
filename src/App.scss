@@ -1,0 +1,44 @@
+.wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .memory-game {
+    position:relative;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 10px;
+    max-width: 700px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(115, 28, 133);
+    
+    &__square{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: 100px;
+      margin:10px;
+      padding:10px;
+      border-radius: 10px;
+      background-color:lime;
+      transition: background-color .3s;
+      cursor: pointer;
+      &:hover{
+        background-color:rgb(28, 66, 28);
+      }
+      .fas{
+        font-size: 60px;
+        margin:10px;
+        color:  rgb(238, 99, 99);
+      
+      }
+    }
+  }
+}
+
